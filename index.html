@@ -9,8 +9,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300..500&display=swap" rel="stylesheet">
 </head>
+<<<<<<< HEAD
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="main.js"></script>
+=======
+<script src="main.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
+>>>>>>> 3cc53699951e043b0d71d9cbff2b72d56e6b431b
 <body>
     <nav class="navbar__container">
         <li class="navbar__logo">
