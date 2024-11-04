@@ -46,6 +46,16 @@ body {
     font-style: normal;
     padding: 0 1.2rem;
 }
+.navbar__links__active{
+    color: var(--dark-color-text);
+    text-decoration: none;
+    font-family: "Unbounded", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: normal;
+    padding: 0 1.2rem;
+}
+
 
 .hero_container{
     margin: 5%;
