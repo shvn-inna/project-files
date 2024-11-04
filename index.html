@@ -9,41 +9,78 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300..500&display=swap" rel="stylesheet">
 </head>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function(){
+            $('a').each(function(){
+                if ($(this).prop('href') == window.location.href) {
+                    $(this).addClass('active'); $(this).parents('li').addClass('active');
+                }
+            });
+        });
+    </script>
 <body>
-    <div class="bg"></div>
-    <nav class="navbar">
-        <div class="navbar__container">
-            <ul class="navbar__menu">
-                <li class="navbar item">
-                    <a href="/" class="navbar__links">Главная</a>
-                </li>
-                <li class="navbar item">
-                    <a href="/hotels.html" class="navbar__links">Отели</a>
-                </li>
-                <li class="navbar item">
-                    <a href="/events.html" class="navbar__links">События</a>
-                </li>
-                <li class="navbar item">
-                    <a href="/" class="navbar__links">Что посмотреть</a>
-                </li>
-                <li class="navbar item">
-                    <a href="/alg_task.html" class="navbar__links">Задача</a>
-                </li>
-                <li class="navbar item">
-                    <a href="/" class="navbar__links">Паспорт</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar__container">
+        <li class="navbar__logo">
+            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D0%B8%D1%8F" class="navbarlogo" target="_blank">
+                <img src="images/Flag_of_Karelia.svg.png" alt="флаг Карелии" width="40px">
+            </a>
+        </li>
+        <li class="navbar item">
+            <a href="/" class="navbar__links" target="_self">Главная</a>
+        </li>
+        <li class="navbar item">
+            <a href="hotels.html" class="navbar__links">Отели</a>
+        </li>
+        <li class="navbar item">
+            <a href="events.html" class="navbar__links">События</a>
+        </li>
+        <li class="navbar item">
+            <a href="sights.html" class="navbar__links">Что посмотреть</a>
+        </li>
+        <li class="navbar item">
+            <a href="alg_task.html" class="navbar__links">Задача</a>
+        </li>
+        <li class="navbar item">
+            <a href="passport.html" class="navbar__links">Паспорт</a>
+        </li>
     </nav>
+    <div id="top"></div>
     <div class="hero_container">
-        <h1>
-            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D0%B8%D1%8F" class="main_header">Карелия</a>
-        </h1>
+        <h1 id="main_header">Карелия</h1>
         <h2>Открой для себя удивительный край</h2>
-        <button class="button-1" role="button">Заполнить форму</button>
         <div class="description__container">
             <p class="descr">Загадочная и таинственная республика, расположенная на северо-западе России. Её уникальная природа, сочетающая в себе леса, озёра и горы, привлекает туристов со всей страны. В Карелии находится знаменитое озеро Онего, второе по величине в Европе. Республика богата историей и культурой, здесь сохранились древние традиции и легенды. Карелия - это идеальное место для тех, кто любит природу, историю и приключения.</p>
         </div>
+    </div>
+    <div class="tosee__container">
+        <div class="tosee__item">
+            <div class="tosee__img">
+                <img src="images/lakes.jpg" alt="озера" height="300px">
+            </div>
+            <p class="tosee__header">Озера</p>
+            <p class="tosee__text">Озера Карелии славятся своей чистотой и живописными пейзажами. Они привлекают туристов и являются важными природными памятниками.</p>
+        </div>
+        <div class="tosee__item">
+            <div class="tosee__img">
+                <img src="images/cultures.jpg" alt="культура"height="300px">
+            </div>
+            <p class="tosee__header">Культура</p>
+            <p class="tosee__text">Культурное наследие Карелии богато и разнообразно, здесь можно найти уникальную архитектуру, включая деревянные церкви и исторические усадьбы.</p>
+        </div>
+        <div class="tosee__item">
+            <div class="tosee__img">
+                <img src="images/les-karelii.webp" alt="леса"height="300px">
+            </div>
+            <p class="tosee__header">Леса</p>
+            <p class="tosee__text">Леса Карелии — это уникальные экосистемы, богатые разнообразием флоры и фауны. Здесь можно встретить редкие виды растений и животных, насладиться тишиной и спокойствием природы.</p>
+        </div>
+    </div>
+    <div class="hero_container">
+        <div class="description__container">
+            <p class="descr">Загадочная и таинственная республика, расположенная на северо-западе России. Её уникальная природа, сочетающая в себе леса, озёра и горы, привлекает туристов со всей страны. В Карелии находится знаменитое озеро Онего, второе по величине в Европе. Республика богата историей и культурой, здесь сохранились древние традиции и легенды. Карелия - это идеальное место для тех, кто любит природу, историю и приключения.</p>
+        </div>
+        <a href="#top" class="button-1" role="button">вернуться к началу</a>
     </div>
 </body>
 </html>
