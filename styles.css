@@ -187,3 +187,66 @@ footer {
     position: fixed;
     bottom: 0;
   }
+
+  .passport {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    height: 700px;
+    width: 500px;
+    background-image: url(images/passport_template.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.block1 {
+    margin-left: 100px;
+    margin-top: 75px;
+    font: bold 90% serif;
+}
+
+.block2 {
+    margin-left: 300px;
+    margin-top: 43px;
+}
+
+.block3 {
+    margin-left: 100px;
+    margin-top: -15px;
+}
+
+.block4 {
+    margin-left: 220px;
+    margin-top: 220px;
+    font: bold 100% serif;
+}
+
+.block5 {
+    margin-left: 225px;
+    margin-top: 35px;
+}
+
+.block6 {
+    margin-left: 210px;
+    margin-top: 3px;
+}
+
+.block7 {
+    margin-left: 200px;
+    margin-top: 15px;
+}
+
+.block8 {
+    margin-left: 300px;
+    margin-top: -20px;
+}
+
+.block9 {
+    margin-left: 220px;
+    margin-top: 5px;
+}
+
+.photo {
+    margin-left: 30px;
+    margin-top: -110px;
+}
