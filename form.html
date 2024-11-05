@@ -31,16 +31,16 @@
             <a href="sights.html" class="navbar__links">Что посмотреть</a>
         </li>
         <li class="navbar item">
-            <a href="alg_task.html" class="navbar__links__active">Задача</a>
+            <a href="alg_task.html" class="navbar__links">Задача</a>
         </li>
         <li class="navbar item">
             <a href="passport.html" class="navbar__links">Паспорт</a>
         </li>
         <li class="navbar item">
-            <a href="form.html" class="navbar__links">Форма</a>
+            <a href="form.html" class="navbar__links__active">Форма</a>
         </li>
     </nav>
-    <div class="hero_container">
+    <div class="hero_container"  id="form__container">
         <div class="description__container">
             <h3>Подобрать подходящий тур</h3>
     <!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
@@ -49,10 +49,10 @@
         <p>Заполните информацию:<input type="hidden"  name="q" value="search"></p>
         <p>Ваше имя: <input type="Text" name="last_name" size=20  value="Вера"></p>
         <p>e-mail</e-mail>: <input type="Text" name="mail" size=20 value="verlin1999@mail.ru"></p>
-        <p>Придумайте пароль: <input type="Password" name="password" size=9  value="123"></p>
-        <p>Место проживания:
-            <input type="Radio" name="place" value="Moscow">Москва
-            <input type="Radio" name="place" value="Nizhny" checked >Нижний
+        <p>Придумайте пароль: <input type="Password" name="password" size=9  value="1111"></p>
+        <p>Бывали ли вы в Карелии?
+            <input type="Radio" name="ans" value="yes">Да
+            <input type="Radio" name="ans" value="no" checked >Нет
         </p>
         <br>
         
@@ -62,7 +62,7 @@
         <br>
         
         <p>Что бы вы хотели увидеть?<br><br>
-            <select name="languages">
+            <select name="want-to-see">
                 <OPTION value="Природу">Природу</OPTION>
                 <OPTION value="Культурные достопримечательности">Культурные достопримечательности</OPTION>
                 <OPTION value="Все и сразу">Все и сразу</OPTION>
@@ -80,11 +80,11 @@
         </p>
 
         <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
-        <p>Название файла: <input type="Техт" name="000_file_name" value="Н_ОW_Г_326510_1_Ivanov.txt" size='30'></p>
+        <p>Номер телефона: <input type="Техт" name="phone" value="+7 999 23 23" size='15'></p>
     
-        <p> Тип записи в файл:<select name="010_mode">
-            <OPTION value="a">a - дозаписать в файл</OPTION>
-            <OPTION value="w">w - очисить файл и записать в файл</OPTION>
+        <p> Подписаться на рассылку: <select name="mailing">
+            <OPTION value="y">да</OPTION>
+            <OPTION value="n">нет</OPTION>
         </select></p>
     
         <input type="hidden" name="function"  value="page">

@@ -275,3 +275,7 @@ TEXTAREA{
     color: #606060;
     padding-left: 1%;
 }
+#form__container{
+    max-width: 700px;
+    
+}
