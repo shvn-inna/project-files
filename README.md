@@ -1,2 +1,2 @@
-minor_hse
-this is a first homework 
+minor_hse first homework 
+https://shvn-inna.github.io/project-files/
