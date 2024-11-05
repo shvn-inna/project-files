@@ -10,6 +10,11 @@ body {
     background-size: cover;
     align-items: top;
 }
+a{
+    text-decoration: underline;
+    color: #23414c;
+    font-weight: 400;
+}
 
 .navbar__container{
     background: var(--light-color-bg);
@@ -249,4 +254,24 @@ footer {
 .photo {
     margin-left: 30px;
     margin-top: -110px;
+}
+
+table{
+    background-size: cover;
+}
+
+input,TEXTAREA,select{
+    background-color: #faf7f4;
+    border: #606060;
+    border-radius: 3px;
+}
+TEXTAREA, select{
+    font-family: "Unbounded", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    font-style: normal;
+}
+TEXTAREA{
+    color: #606060;
+    padding-left: 1%;
 }
