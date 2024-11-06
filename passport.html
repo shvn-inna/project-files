@@ -37,20 +37,34 @@
         <li class="navbar item">
             <a href="form.html" class="navbar__links">Форма</a>
         </li>
+        <li class="navbar item">
+            <a href="domjs.html" class="navbar__links">DOM JS</a>
+        </li>
     </nav>
     <div class="passport">
+        <div class="description__container">
+            <h3>Изменяем кириллицу на латиницу по клику</h3>
+        </div>
+    <div class="passport">
+        <script src="passport.js">
+            document.addEventListener('DOMContentLoaded', function() {   
+            });
+            </script>
         <div class="block1">УМВД РОССИИ ПО ВОРОНЕЖСКОЙ <br> ОБЛАСТИ </div>
         <div class="block2"> 06.07.2017</div>
         <div class="block3"> 123-456</div>
-        <div class="block4"> Шванова </div>
-        <div class="block5"> Инна </div>
-        <div class="block6"> Геннадьевна </div>
+        <div class="passport_surname" id="srnm"> Шванова </div>
+        <div class="passport_name" id="nm"> Инна </div>
+        <div class="passport_fathername" id="fnm"> Геннадьевна </div>
         <div class="block7"> жен. </div>
         <div class="block8"> 31.04.2003 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
-        <div class="block9"> гор.Воронеж </div>
+        <div class="block9" id="city"> гор.Воронеж </div>
         <div class="photo"> <img src="images/me.jpg" 
             width="130" height="150" /> </div>
     </div>
+    </div>
+    <p class="button-2" id="for_click1">латиница</p>
+    <p class="button-2" id="for_click2">кириллица</p>
 </body>
-
+<script src="scripts/lang.js"></script>
 </html>

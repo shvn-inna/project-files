@@ -94,7 +94,7 @@ h2{
   text-decoration: none;
 }
 
-.button-1 {
+.button-1, .button-2 {
     background-color: var(--dark-color-bg);
     border-radius: 8px;
     border-style: none;
@@ -220,18 +220,17 @@ footer {
     margin-top: -15px;
 }
 
-.block4 {
+.passport_surname {
     margin-left: 220px;
     margin-top: 220px;
-    font: bold 100% serif;
 }
 
-.block5 {
+.passport_name {
     margin-left: 225px;
     margin-top: 35px;
 }
 
-.block6 {
+.passport_fathername{
     margin-left: 210px;
     margin-top: 3px;
 }
@@ -277,5 +276,5 @@ TEXTAREA{
 }
 #form__container{
     max-width: 700px;
-    
+
 }
