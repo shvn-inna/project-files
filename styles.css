@@ -212,12 +212,12 @@ footer {
 
 .block2 {
     margin-left: 300px;
-    margin-top: 43px;
+    margin-top: 60px;
 }
 
 .block3 {
     margin-left: 100px;
-    margin-top: -15px;
+    margin-top: -35px;
 }
 
 .passport_surname {
@@ -232,27 +232,27 @@ footer {
 
 .passport_fathername{
     margin-left: 210px;
-    margin-top: 3px;
+    margin-top: -5px;
 }
 
 .block7 {
     margin-left: 200px;
-    margin-top: 15px;
+    margin-top: -10px;
 }
 
 .block8 {
     margin-left: 300px;
-    margin-top: -20px;
+    margin-top: -35px;
 }
 
 .block9 {
     margin-left: 220px;
-    margin-top: 5px;
+    margin-top: -10px;
 }
 
 .photo {
     margin-left: 30px;
-    margin-top: -110px;
+    margin-top: -120px;
 }
 
 table{
@@ -277,4 +277,7 @@ TEXTAREA{
 #form__container{
     max-width: 700px;
 
+}
+.task{
+    list-style: none;
 }
