@@ -1,7 +1,7 @@
 :root{
---light-color-bg: #fff9f4cd;
+--light-color-bg: #ffffffe0;
 --dark-color-bg: #18131372;
---light-color-text: #FFF9F4;
+--light-color-text: #f4fbff;
 --dark-color-text: #181313;
 }
 body {
@@ -16,11 +16,8 @@ a{
     font-weight: 400;
 }
 
-.navbar__container{
+.navbar{
     background: var(--light-color-bg);
-    flex-wrap: wrap;
-    top: 0;
-    display: flex;
     justify-content: space-evenly;
     justify-content: center;
     align-items: center;
@@ -42,7 +39,7 @@ a{
     height: 80px;
     justify-content: center;
 }
-.navbar__links{
+.nav-item{
     color: var(--dark-color-text);
     text-decoration: none;
     font-family: "Unbounded", sans-serif;
@@ -51,7 +48,7 @@ a{
     font-style: normal;
     padding: 0 1.2rem;
 }
-.navbar__links__active{
+.nav-item__active{
     color: var(--dark-color-text);
     text-decoration: none;
     font-family: "Unbounded", sans-serif;
@@ -171,9 +168,17 @@ h3,h4{
     overflow: hidden;
     max-width: 300px;
 }
+#tour-card{
+    background: var(--light-color-bg);
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 400px;
+}
 .tosee__img{
     height: 200px;
-    
     object-fit: fit;
     overflow: hidden;
 }
@@ -184,6 +189,8 @@ h3,h4{
 .tosee__header{
     font-weight: 500;
     margin-bottom: 0%;
+    margin-bottom: 1%;
+    font-size: 0.9rem;
 }
 
 
@@ -203,64 +210,8 @@ footer {
     background-position: left;
     background-repeat: no-repeat;
 }
-
-.block1 {
-    margin-left: 100px;
-    margin-top: 75px;
-    font: bold 90% serif;
-}
-
-.block2 {
-    margin-left: 300px;
-    margin-top: 60px;
-}
-
-.block3 {
-    margin-left: 100px;
-    margin-top: -35px;
-}
-
-.passport_surname {
-    margin-left: 220px;
-    margin-top: 220px;
-}
-
-.passport_name {
-    margin-left: 225px;
-    margin-top: 35px;
-}
-
-.passport_fathername{
-    margin-left: 210px;
-    margin-top: -5px;
-}
-
-.block7 {
-    margin-left: 200px;
-    margin-top: -10px;
-}
-
-.block8 {
-    margin-left: 300px;
-    margin-top: -35px;
-}
-
-.block9 {
-    margin-left: 220px;
-    margin-top: -10px;
-}
-
-.photo {
-    margin-left: 30px;
-    margin-top: -120px;
-}
-
-table{
-    background-size: cover;
-}
-
 input,TEXTAREA,select{
-    background-color: #faf7f4;
+    background-color: #f4f6fa;
     border: #606060;
     border-radius: 3px;
 }
