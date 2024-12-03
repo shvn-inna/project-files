@@ -38,7 +38,7 @@ a{
     height: 30px;
     width: 30px;
 }
-.navbar__item{
+.navbar__item, .nav_item{
     height: 80px;
     justify-content: center;
 }

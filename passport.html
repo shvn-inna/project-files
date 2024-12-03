@@ -1,70 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"  meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300..500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <script src="js/"></script>
-    <nav class="navbar__container">
-        <li class="navbar__logo">
-            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B5%D0%BB%D0%B8%D1%8F" class="navbarlogo" target="_blank">
-                <img src="images/Flag_of_Karelia.svg.png" alt="флаг Карелии" width="40px">
-            </a>
-        </li>
-        <li class="navbar item">
-            <a href="index.html" class="navbar__links" target="_self">Главная</a>
-        </li>
-        <li class="navbar item">
-            <a href="hotels.html" class="navbar__links">Отели</a>
-        </li>
-        <li class="navbar item">
-            <a href="events.html" class="navbar__links">События</a>
-        </li>
-        <li class="navbar item">
-            <a href="sights.html" class="navbar__links">Что посмотреть</a>
-        </li>
-        <li class="navbar item">
-            <a href="alg_task.html" class="navbar__links">Задача</a>
-        </li>
-        <li class="navbar item">
-            <a href="passport.html" class="navbar__links__active">Паспорт</a>
-        </li>
-        <li class="navbar item">
-            <a href="form.html" class="navbar__links">Форма</a>
-        </li>
-        <li class="navbar item">
-            <a href="domjs.html" class="navbar__links">DOM JS</a>
-        </li>
-    </nav>
-    <div class="passport">
-        <div class="description__container">
-            <h3>Изменяем кириллицу на латиницу по клику</h3>
-        </div>
-    <div class="passport">
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {   
-            });
-        </script>
-        <p class="block1">УМВД РОССИИ ПО ВОРОНЕЖСКОЙ ОБЛАСТИ </p>
-        <p class="block2"> 06.07.2017</p>
-        <p class="block3"> 123-456</p>
-        <p class="passport_surname" id="srnm"> Шванова </p>
-        <p class="passport_name" id="nm"> Инна </p>
-        <p class="passport_fathername" id="fnm"> Геннадьевна </p>
-        <p class="block7"> жен. </p>
-        <p class="block8"> 31.04.2003 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
-        <p class="block9" id="city"> гор.Воронеж </p>
-        <div class="photo"> <img src="images/me.jpg" 
-            width="130" height="150" /> </div>
+
+    <!-- Навигационная панель (navbar) -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Основной контент страницы -->
+    <div class="container mt-4">
+        <h1>Добро пожаловать на наш сайт!</h1>
+        <p>Это пример страницы с навигационной панелью, созданной с использованием Bootstrap. Вы можете использовать меню выше, чтобы навигировать по сайту.</p>
+        <p>Bootstrap позволяет легко создавать адаптивные веб-страницы, которые выглядят хорошо на всех устройствах.</p>
     </div>
-    </div>
-    <p class="button-2" id="for_click1">латиница</p>
-    <p class="button-2" id="for_click2">кириллица</p>
+
+    <!-- Подключите jQuery и Popper.js, затем Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Подключите navbar.js -->
+    <script src="navbar.js"></script>
+
 </body>
-<script src="scripts/lang.js"></script>
 </html>
