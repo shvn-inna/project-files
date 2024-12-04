@@ -19,80 +19,81 @@
     <div class="hero_container"  id="form__container">
         <div class="description__container">
             <h3>Подобрать подходящий тур</h3>
-    <!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
-    <!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
-    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
-        <p>Заполните информацию:<input type="hidden"  name="q" value="search"></p>
-        <p>Ваше имя: <input type="Text" name="last_name" size=20  value="Вера"></p>
-        <p>e-mail</e-mail>: <input type="Text" name="mail" size=20 value="verlin1999@mail.ru"></p>
-        <p>Придумайте пароль: <input type="Password" name="password" size=9  value="1111"></p>
-        <p>Бывали ли вы в Карелии?
-            <input type="Radio" name="ans" value="yes">Да
-            <input type="Radio" name="ans" value="no" checked >Нет
-        </p>
-        <br>
-        
-        <p>С кем вы путешествуете?:</p>
-            <input type="Checkbox" name="company"  value="kids" checked>С детьми
-            <input type="Checkbox"  name="company"   value="pets" checked>С домашними любимцами
-        <br>
-        
-        <p>Что бы вы хотели увидеть?<br><br>
-            <select name="want-to-see">
-                <OPTION value="Природу">Природу</OPTION>
-                <OPTION value="Культурные достопримечательности">Культурные достопримечательности</OPTION>
-                <OPTION value="Все и сразу">Все и сразу</OPTION>
-            </select>
-        </p>
-    
-        <p>Планируемые даты: <br><br>
-            <input type="date" name="user_date"  value='2025-02-02'>
-            <input type="date" name="user_date"  value='2025-02-22'>
-        </p>
+            <!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
+            <!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
+            <form class="form" action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <p>Заполните информацию:<input type="hidden"  name="q" value="search"></p>
+                <p>Ваше имя: <input type="Text" name="last_name" size=20  value="Вера"></p>
+                <p>e-mail</e-mail>: <input type="Text" name="mail" size=20 value="verlin1999@mail.ru"></p>
+                <p>Придумайте пароль: <input type="Password" name="password" size=9  value="1111"></p>
+                <p>Бывали ли вы в Карелии?
+                    <input type="Radio" name="ans" value="yes">Да
+                    <input type="Radio" name="ans" value="no" checked >Нет
+                </p>
+                <br>
+                
+                <p>С кем вы путешествуете?:</p>
+                    <input type="Checkbox" name="company"  value="kids" checked>С детьми
+                    <input type="Checkbox"  name="company"   value="pets" checked>С домашними любимцами
+                <br>
+                
+                <p>Что бы вы хотели увидеть?<br><br>
+                    <select name="want-to-see">
+                        <OPTION value="Природу">Природу</OPTION>
+                        <OPTION value="Культурные достопримечательности">Культурные достопримечательности</OPTION>
+                        <OPTION value="Все и сразу">Все и сразу</OPTION>
+                    </select>
+                </p>
+            
+                <p>Планируемые даты: <br><br>
+                    <input type="date" name="user_date"  value='2025-02-02'>
+                    <input type="date" name="user_date"  value='2025-02-22'>
+                </p>
 
-        <p> Комментарий: <br>
+                <p> Комментарий: <br>
+                    <br>
+                    <TEXTAREA cols=80 rows=4 name="textarea" >дополнительная информация или вопросы</TEXTAREA>
+                </p>
+
+                <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+                <p>Номер телефона: <input type="Техт" name="phone" value="+7 999 23 23" size='15'></p>
+            
+                <p> Подписаться на рассылку: <select name="mailing">
+                    <OPTION value="y">да</OPTION>
+                    <OPTION value="n">нет</OPTION>
+                </select></p>
+            
+                <input type="hidden" name="function"  value="page">
+                <input type="hidden" name="page_id"  value="3">
+            
+                <p>
+                    <input type="Reset"  name="Reset"  value="Обновить">
+                    <input type="Submit" name="submit"  value="Отправить">
+                </p>
+            </div>
+        
+        <!-- </form>
             <br>
-            <TEXTAREA cols=80 rows=4 name="textarea" >дополнительная информация или вопросы</TEXTAREA>
-        </p>
+            <div class="description__container">
+                <form class="form" action="https://www.google.ru/?hl=ru" method="get" target="_blank">
 
-        <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
-        <p>Номер телефона: <input type="Техт" name="phone" value="+7 999 23 23" size='15'></p>
-    
-        <p> Подписаться на рассылку: <select name="mailing">
-            <OPTION value="y">да</OPTION>
-            <OPTION value="n">нет</OPTION>
-        </select></p>
-    
-        <input type="hidden" name="function"  value="page">
-        <input type="hidden" name="page_id"  value="3">
-    
-        <p>
-            <input type="Reset"  name="Reset"  value="Обновить">
-            <input type="Submit" name="submit"  value="Отправить">
-        </p>
-        </div>
-       </form>
-        <br>
-        <div class="description__container">
-            <form class="form" action="https://www.google.ru/?hl=ru" method="get" target="_blank">
-
-                <p>
-                <label for="lastname"> Фамилия</label><br><input type="text" name="surname" required="">
-                </p>
-                <p>
-                <label for="name"> Имя </label><br><input type="text" name="firstname"><br>
-                </p>
-                <p>
-                <label for="groupnumber"> Номер группы </label><br><input type="number" name="groupnumber">
-                </p>
-                <p>
-                <label for="email"> E-mail </label><br><input type="email" name="email">
-                </p>
-                <p>
-                <label for="date"> Дата отправки </label><br><input type="date" name="date">
-                </p>
-                <input type="Submit" name="submit"  value="Отправить">
-            </form>
+                    <p>
+                    <label for="lastname"> Фамилия</label><br><input type="text" name="surname" required="">
+                    </p>
+                    <p>
+                    <label for="name"> Имя </label><br><input type="text" name="firstname"><br>
+                    </p>
+                    <p>
+                    <label for="groupnumber"> Номер группы </label><br><input type="number" name="groupnumber">
+                    </p>
+                    <p>
+                    <label for="email"> E-mail </label><br><input type="email" name="email">
+                    </p>
+                    <p>
+                    <label for="date"> Дата отправки </label><br><input type="date" name="date">
+                    </p>
+                    <input type="Submit" name="submit"  value="Отправить">
+                </form> -->
         </div>
     </div>
     

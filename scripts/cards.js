@@ -4,8 +4,8 @@ async function getResponce() {
     let content = await responce.text()
     console.log("await responce.text()\n", content)
     content = JSON.parse(content)
-    content = content.slice(0, 9)
-    console.log("content.slice(0, 9)", content)
+    content = content.slice(0, 10)
+    console.log("content.slice(0, 10)", content)
     let key
     for (key in content) {
         console.log(content[key].id, content[key].title)
@@ -23,8 +23,8 @@ async function getResponce() {
             <p class="tosee__text">${content[key].tour_descr}</p>
             <p class="card-text"><b>${content[key].price} р.</b></p>
             <p class="card-text">${content[key].tour_date}</p>
-            <input type="hidden" name= "vendor_code" value=${content[key].tour_date}>
-            <p class="card-text" >Заказать <input class="w-25" type="number" name="amount" value="0"></p>
+            <input type="hidden" name= "tour_id" value=${content[key].tour_id}>
+            <p class="card-text" >Заказать<input class="w-25" type="number" name="amount" value="0"></p>
         </div>
                 `
     }
